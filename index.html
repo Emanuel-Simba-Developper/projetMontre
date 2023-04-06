@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 8%;
+        }
+        .relogio , .horas , .minutos{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .animationHora{
+            animation: rotate 60s linear infinite;
+        }
+       
+        .animationMinutos{
+            animation: rotate 5s linear infinite
+        }
+        @keyframes rotate {
+            from{transform: rotateZ(0deg);}
+            to{transform: rotateZ(360deg);}
+        }
+       
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/william-costa/wdev-mock-css-animation-resources/master/assets/images/clock.svg" class="relogio">
+        <img src="https://raw.githubusercontent.com/william-costa/wdev-mock-css-animation-resources/master/assets/images/hour.svg" class="horas animationHora">
+        <img src="https://raw.githubusercontent.com/william-costa/wdev-mock-css-animation-resources/master/assets/images/minute.svg" class="minutos animationMinutos">
+    </div>
+   
+</body>
+</html>
